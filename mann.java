@@ -12,8 +12,8 @@ class Node {
         this.next = null;
     }
 }
-public class LinkedList{
-    private static Node ConvertArr2LL(int[] arr)
+public class Linked{
+    public static Node ConvertArr2LL(int[] arr)
     {
         Node head = new Node(arr[0]);
         Node mover = head;
@@ -30,14 +30,7 @@ public class LinkedList{
     public static void main(String[] args) {
         int[] arr = {2, 5, 8, 7};
         Node head = ConvertArr2LL(arr);
-        System.out.println(head.data);
-        Node temp = head;
-        while(temp!=null)
-        {
-            System.out.println(temp.data);
-            temp = temp.next;
-
-        }
+        System.out.println(head);
         
     }
 }
